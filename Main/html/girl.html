@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Funny Girl Animation</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    .scene {
+      position: relative;
+      width: 300px;
+      height: 400px;
+    }
+
+    .girl {
+      width: 100%;
+      animation: float 5s ease-in-out infinite, spin 5s linear infinite;
+    }
+
+    .blink {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      width: 40px;
+      height: 10px;
+      background: black;
+      border-radius: 50%;
+      animation: blinkAnim 5s infinite;
+      z-index: 2;
+    }
+
+    .typing {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 22px;
+      background: #fffbe6;
+      padding: 6px 12px;
+      border: 2px solid #999;
+      border-radius: 8px;
+      animation: typingAnim 5s infinite;
+    }
+
+    .error-bubble {
+      position: absolute;
+      top: 0;
+      right: -30px;
+      background: #ffebeb;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 2px solid #ff4d4d;
+      font-size: 14px;
+      animation: errorPop 5s infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      25% { transform: translateY(-10px); }
+      50% { transform: translateY(5px); }
+      75% { transform: translateY(-5px); }
+    }
+
+    @keyframes blinkAnim {
+      0%, 90%, 100% { opacity: 0; }
+      45%, 50% { opacity: 1; }
+    }
+
+    @keyframes typingAnim {
+      0%, 20% { content: ""; opacity: 0; }
+      25%, 50% { opacity: 1; content: "Typing... 🤔"; }
+      51%, 100% { opacity: 0; }
+    }
+
+    @keyframes errorPop {
+      0%, 60% { opacity: 0; transform: scale(0); }
+      65%, 75% { opacity: 1; transform: scale(1); }
+      80%, 100% { opacity: 0; transform: scale(0); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      90% { transform: rotate(0deg); }
+      95% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scene">
+    <img src="girl.avif" alt="Funny Girl" class="girl">
+    <div class="blink"></div>
+    <div class="typing">Typing... 🤔</div>
+    <div class="error-bubble">404 Brain Not Found 😵</div>
+  </div>
+
+</body>
+</html>

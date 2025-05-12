@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(135deg, #1b1236, #8a5dd4);
+    color: white; /* Optional: makes text readable */
+    background-size: cover;      /* make it cover the whole div */
+    background-position: center; /* center the image */
+    height: 90vh; /* full screen height */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    
+}
+
+.head {
+    background-color: #79668d;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+ /* Limit the maximum width of the container */
+    width: 80%;
+    height: 450px;
+    padding: 20px;
+    margin: 100px 0px 0px 130px;
+}
+
+.cont h1{
+    text-align: center; /* Center text and form elements */
+   
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    /* Center content vertically */
+    
+}
+
+.head .tech {
+  font-weight: bold;
+  color: #060505;
+  margin-bottom: 15px;
+  font-size: large;
+}
+
+p{
+     font-size: large;
+}
+
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+   font-size: large;
+}
+
+li {
+  margin-bottom: 8px;
+   font-size: large;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
