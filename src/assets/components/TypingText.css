@@ -1,0 +1,17 @@
+.typing-text {
+    color: white;
+    white-space: pre-line; /* so \n works */
+    border-right: 2px solid white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: fit-content;
+    animation: blink 0.7s steps(1) infinite;
+    margin-left: 20px;
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
