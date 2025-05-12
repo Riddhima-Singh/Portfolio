@@ -1,0 +1,557 @@
+body {
+  background: linear-gradient(135deg, #1b1236, #8a5dd4);
+  color: white; /* Optional: makes text readable */
+  background-size: cover;      /* make it cover the whole div */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* no repeat */
+  height: 100vh; /* full screen height */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  height: 100%;
+
+  
+}
+nav {
+  display: flex;
+
+  max-width: 1280px;
+  margin: 0;
+  height: 72px;
+}
+.logo h2 a {
+  height: 60px;
+  margin-left: 20px;
+  text-decoration: none;  /* removes underline */
+  color: white;           /* sets text color to white */
+  font-weight: bold;
+}
+.navb {
+  list-style: none;
+  display: flex;
+  margin-left: 600px;
+  margin-top: 20px;
+}
+
+.navb li {
+  padding: 3px 15px;
+}
+
+.navb li a {
+  text-decoration: none;
+  color: #f8f8fa;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s linear;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.navb2 {
+  margin-top: px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.get-in-touch-btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap; /* prevents line breaks */
+  width: auto; /* allows natural width */
+  margin-top: 18px;
+}
+
+
+.get-in-touch-btn:hover {
+  background-color: white;
+  color: #4b0082; /* Replace with your purple shade if needed */
+}
+
+
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icon-circle:hover {
+  background-color: white;
+  color: black;
+}
+
+.cont h3 {
+  border: 2px solid white; /* White border */
+  padding: 20px; /* Space inside the box */
+  display: inline-block; /* Shrinks to fit content */
+  border-radius: 8px; /* Rounded corners (optional) */
+  background-color: transparent; /* Or set a color if needed */
+  color: white;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+.cont h4{
+  border: 2px solid white; /* White border */
+  padding: 10px; /* Space inside the box */
+  display: inline-block; /* Shrinks to fit content */
+  border-radius: 8px; /* Rounded corners (optional) */
+  background-color: transparent; /* Or set a color if needed */
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.cont .bi {
+  font-size: 2rem; /* Adjust the size as needed */
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;         /* Increase size as needed */
+  vertical-align: middle;  /* Align with text/button */
+  margin-left: 10px;  
+}
+
+
+.cont p{
+  margin-left: 20px;
+  color: #827c82;
+  margin-bottom: 20px;
+}
+
+
+
+.contact-container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-family: sans-serif;
+  background-color: rgb(65, 36, 95);
+  border-radius: 5px;  /* Add this line */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  width: 80%;
+  margin-left: 100px;
+  border-radius: 40px;
+  height: 600px;
+  margin-top: 40px;
+  
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 700px;
+  color: white;
+  height: 90%;
+  padding: 5px 10px;    /* Add this line */
+
+}
+
+.contact-form h2  {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-decoration: none;  /* removes underline */
+  color: white;           /* sets text color to white */
+  font-weight: bold;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;  
+  display: flex;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row input {
+  flex: 1;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #120312;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #f2e6ff;
+}
+
+.skills-container {
+  
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center; /* or your existing gradient */
+  padding: 2rem 0;  /* Adjust padding as needed */
+  margin: 0;        /* Ensure no extra margin */
+}
+
+.category-circles {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #1c1f35;
+  border: 3px solid #444;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.circle:hover {
+  transform: scale(1.05);
+  border-color: #6d28d9;
+}
+
+.circle.active {
+  background: radial-gradient(circle at center, #5b21b6, #1c1f35);
+  box-shadow: 0 0 15px #9333ea;
+  border-color: #9333ea;
+}
+
+.skills-grid-section {
+  background-color: #1a1c2d;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.skills-grid-section h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  row-gap: 2rem;
+  column-gap: 2.0rem;
+  justify-items: center;
+}
+
+
+.skill-pill {
+  background-color: #202436;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 6px #00000055;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.skill-pill:hover {
+  background-color: #2b304a;
+  transform: scale(1.03);
+}
+.skill-box {
+  padding: 5rem;
+  border-radius: 10px;
+  background-color: #c42d3c;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+.hello h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hello p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  width: 300px; /* Fixed width to fit multiple cards in a row */
+  height: 180px;
+  background: linear-gradient(135deg, #8f7cb9, #272a41);
+  border-radius: 20px;
+  padding: 30px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  margin-left: 150px;
+}
+
+
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-content {
+  text-align: left;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  font-size: 20px;
+  color: #4a0c6b;
+  margin-bottom: 20px;
+}
+
+.card-description {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  background-color: #b5aabb;
+  color: black;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+  text-decoration: none;
+
+}
+
+.card-button:hover {
+  background-color: #ffc107;
+}
+
+.projects-section {
+  padding: 80px 40px;
+  color: white;
+  text-align: center;
+}
+p{
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 90px;
+  justify-content: center;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if screen is too small */
+  justify-content: center;
+  gap: 30px; /* Space between cards */
+  padding: 40px;
+}
+
+.newsletter-container {
+  /* Styles for the container div */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  /* height: 100vh;  You might need this or a similar height to center vertically */
+  padding: 20px;
+}
+
+.newsletter-content {
+  /* Styles for the content div */
+  text-align: center; /* Center text and form elements */
+  background-color: #79668d;
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+  max-width: 1000px; /* Limit the maximum width of the container */
+  width: 100%;
+  height: 200px;
+}
+
+.newsletter-text h2 {
+  /* Styles for the heading */
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.newsletter-text p {
+  /* Styles for the paragraph */
+  font-size: 16px;
+  color: #1c1414;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  /* Styles for the form */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Horizontal layout for input and button */
+  align-items: center;  /* Vertically center items */
+  gap: 10px; /* Space between input and button */
+  width: 100%;
+}
+
+.newsletter-form input {
+  /* Styles for the input */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 0; /* Allow input to take up available space */
+  font-size: 16px;
+  outline: none;
+  margin-left: 350px;
+  color: #1a1c2d;
+
+}
+input::placeholder{
+  color: rgb(18, 16, 16);
+}
+
+.newsletter-form input:focus {
+  border-color: #32065b; /* Highlight on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+
+.newsletter-form button {
+  /* Styles for the button */
+  padding: 10px 20px;
+  background-color: #553663;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.newsletter-form button:hover {
+  /* Styles for the button on hover */
+  background-color: #b5abc2;
+}
+
+/* Responsive adjustments (Optional - adjust as needed) */
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column; /* Stack input and button on smaller screens */
+    gap: 10px;
+  }
+  .newsletter-form button{
+    width: 100%;
+  }
+}
+
+
+.project-section {
+  position:relative; /* enough space for top box */
+  padding-bottom: 100px;
+}
+
+.newsletter-container {
+  position: relative;
+  top: -80px;
+  margin: 0 auto;
+  z-index: 3;
+  width: 70%;
+  height: 200px;
+
+}
+
+.photo {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 200px;
+  right: 150px;
+  z-index: 10;
+}
+
+.photo img {
+  width: 80%;
+  max-width: 350px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+@keyframes moveUpRight {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, -20px); /* → right, ↑ up */
+  }
+}
+
+img {
+  animation: moveUpRight 2s infinite ease-in-out;
+}
